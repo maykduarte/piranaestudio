@@ -1,0 +1,484 @@
+* {
+  margin: 0%;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to right, #1c1b1d, rgb(0, 0, 0), #1c1b1d) !important;
+}
+
+header {
+  padding: 8px;
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo img {
+  border-radius: 100%;
+}
+header .logo h4 {
+  margin: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header label {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  left: 90%;
+  z-index: 10;
+}
+header #menu {
+  display: none;
+}
+header .links {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+header .links ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .links ul li {
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 4px;
+  font-size: 2vh;
+}
+header .links ul li a {
+  text-decoration: none;
+  color: white;
+}
+header .links ul li a:hover {
+  color: #FFCC0D;
+}
+
+@media (max-width: 720px) {
+  header label {
+    display: initial;
+  }
+  header .links {
+    width: 100%;
+    position: fixed;
+    top: 6%;
+    background-image: linear-gradient(to right, #1c1b1d, rgb(0, 0, 0), #1c1b1d) !important;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 9;
+  }
+  header .links ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  header #menu:checked ~ .links {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.intro {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(255, 205, 13) 100%, rgb(0, 212, 255) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 0px 20px 0px 20px;
+  border-radius: 20px;
+  padding: 30px;
+}
+.intro .escrito h1 {
+  margin: 25px;
+  font-size: 2rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.intro .escrito p {
+  margin: 15px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.anuncio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 70px;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
+}
+form {
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(255, 205, 13) 100%, rgb(0, 212, 255) 100%);
+  margin: 0px 20px 60px 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+form .inputs {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+form .comentario {
+  color: white;
+  height: 70px;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: rgba(255, 255, 255, 0.09);
+  border: 2px solid rgb(0, 0, 0);
+  width: 80%;
+}
+form .nombre {
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: rgba(255, 255, 255, 0.09);
+  border: 2px solid rgb(0, 0, 0);
+  width: 80%;
+}
+form .email {
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: rgba(255, 255, 255, 0.09);
+  border: 2px solid rgb(0, 0, 0);
+  width: 80%;
+}
+form h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.btnForm .enviar, .btnForm .reset {
+  background-color: rgba(255, 255, 255, 0.09);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 10px;
+}
+.footer {
+  background-image: linear-gradient(to right, #1c1b1d, rgb(0, 0, 0), #1c1b1d);
+  border-radius: 20px;
+  margin: 20px;
+  padding: 10px;
+}
+.footer .containerFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-bottom: 1px solid rgb(47, 42, 42);
+}
+.footer .containerFooter .permisos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+.footer .containerFooter .permisos h2 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+.footer .containerFooter .permisos p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer .containerFooter .btnRedes {
+  display: flex;
+}
+.footer .derechos {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.btn-1, .btn-4, .btn-3, .btn-2 {
+  width: 100%;
+  padding: 0.5px;
+  margin: 10px 5px;
+  transition-duration: 500ms;
+}
+.btn-1:hover, .btn-4:hover, .btn-3:hover, .btn-2:hover {
+  transform: rotate(360deg);
+}
+
+.containerServicios {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  margin: 0px 10px 50px;
+}
+.containerServicios .serv-1, .containerServicios .serv-4, .containerServicios .serv-3, .containerServicios .serv-2 {
+  background-color: #030303;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 20px;
+  border: 2px solid #F8C70C;
+  padding: 32px;
+  width: 25%;
+}
+.containerServicios .serv-1 h3, .containerServicios .serv-4 h3, .containerServicios .serv-3 h3, .containerServicios .serv-2 h3 {
+  background-color: rgb(11, 10, 12);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 2vh;
+  text-align: center;
+  font-size: 1.3rem;
+  border-radius: 10px;
+}
+.containerServicios .serv-1 p, .containerServicios .serv-4 p, .containerServicios .serv-3 p, .containerServicios .serv-2 p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .containerServicios {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 0px 10px 50px;
+  }
+}
+.containerNosotros p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 50px 20px;
+}
+.containerNosotros .imgNosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.containerNosotros .imgNosotros img {
+  width: 60%;
+  border: 2px solid yellow;
+  border-radius: 20px;
+}
+
+.presentacionGrabaciones {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px;
+}
+.presentacionGrabaciones h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 40px;
+}
+.presentacionGrabaciones p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+.presentacionGrabaciones span {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.containerPrecios {
+  margin: 0px 20px 0px 20px;
+}
+.containerPrecios h2 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 50px 0px;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(255, 205, 13) 100%, rgb(0, 212, 255) 100%);
+  border-radius: 20px;
+}
+.containerPrecios .guitarraElectrica {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.containerPrecios .guitarraElectrica .guit-1, .containerPrecios .guitarraElectrica .guit-3, .containerPrecios .guitarraElectrica .guit-2 {
+  border: 2px solid yellow;
+  border-radius: 20px;
+  padding: 20px;
+  width: 26.6%;
+  margin: 4px 0px 4px;
+}
+.containerPrecios .guitarraElectrica .guit-1 h3, .containerPrecios .guitarraElectrica .guit-3 h3, .containerPrecios .guitarraElectrica .guit-2 h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-bottom: 20px;
+}
+.containerPrecios li {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 6px;
+}
+.containerPrecioBajo {
+  margin: 0px 20px 0px 20px;
+}
+.containerPrecioBajo h2 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 50px 0px;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(255, 205, 13) 100%, rgb(0, 212, 255) 100%);
+  border-radius: 20px;
+}
+.containerPrecioBajo .bajoElectrico {
+  display: flex;
+  justify-content: center;
+}
+.containerPrecioBajo .bajoElectrico .bajo-1 {
+  border: 2px solid yellow;
+  border-radius: 20px;
+  padding: 20px;
+  width: 26.6%;
+}
+.containerPrecioBajo .bajoElectrico .bajo-1 h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-bottom: 20px;
+}
+.containerPrecioBajo li {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.containerLoops {
+  margin: 0px 20px 60px 20px;
+}
+.containerLoops h2 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 50px 0px;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(255, 205, 13) 100%, rgb(0, 212, 255) 100%);
+  border-radius: 20px;
+}
+.containerLoops .loop {
+  display: flex;
+  justify-content: center;
+}
+.containerLoops .loop .loop-1 {
+  border: 2px solid yellow;
+  border-radius: 20px;
+  padding: 20px;
+  width: 26.6%;
+}
+.containerLoops .loop .loop-1 h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-bottom: 20px;
+}
+.containerLoops li {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 720px) {
+  .guitarraElectrica {
+    flex-direction: column;
+    align-items: center !important;
+  }
+  .guitarraElectrica .guit-1, .guitarraElectrica .containerPrecios .guit-2, .containerPrecios .guitarraElectrica .guit-2, .guitarraElectrica .containerPrecios .guit-3, .containerPrecios .guitarraElectrica .guit-3 {
+    width: auto !important;
+  }
+  .containerPrecioBajo .bajoElectrico .bajo-1 {
+    width: auto !important;
+  }
+  .containerLoops .loop .loop-1 {
+    width: auto !important;
+  }
+}
+.presentacionMezcla {
+  margin: 50px 20px 50px 20px;
+}
+.presentacionMezcla .infoMezcla {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid #F6C50C;
+  border-radius: 20px;
+}
+.presentacionMezcla .infoMezcla h1 {
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  margin-top: 30px;
+}
+.presentacionMezcla .infoMezcla p {
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+.presentacionMezcla .infoMezcla span {
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+
+.artistas h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.art-1, .art-2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.art-1 .a1, .art-2 .a1 {
+  margin: 4px;
+  transition: 500ms;
+}
+.art-1 .a1:hover, .art-2 .a1:hover {
+  transform: scale(1.3);
+}
+
+.art-2 {
+  margin-bottom: 50px;
+}
+
+/*
+@media(max-width:720px) {
+    .art-1{
+        flex-direction: column;
+    }
+}*/
+
+/*# sourceMappingURL=style.css.map */

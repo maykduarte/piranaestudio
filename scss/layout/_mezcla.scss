@@ -1,0 +1,31 @@
+.presentacionMezcla{
+    margin: 50px 20px 50px 20px;
+    .infoMezcla{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 2px solid #F6C50C;
+        border-radius: 20px;
+        h1{
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        p{
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+            }
+            span{
+                text-align: center;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 20px;
+        }
+    }
+    
+}

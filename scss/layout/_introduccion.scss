@@ -1,0 +1,43 @@
+.intro{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,205,13,1) 100%, rgba(0,212,255,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    color: white;
+    margin: 0px 20px 0px 20px;
+    border-radius: 20px;
+    padding: 30px;
+    .escrito{
+        h1{ 
+            margin: 25px;
+            font-size: 2rem;
+            text-align: center; 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{  
+            margin: 15px; 
+            text-align: center;  
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+}
+
+.anuncio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 70px;
+    text-align: center;
+}
+
+
+@media(max-width:720px){
+    .intro{
+        display: flex;
+        flex-direction: column;
+        }
+    }
+    
