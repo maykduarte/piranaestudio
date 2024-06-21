@@ -403,6 +403,15 @@ form h1 {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
+.containerLoops .containerAudio {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.containerLoops .containerAudio .audio {
+  margin: 10px 0px 10px;
+}
 
 @media (max-width: 720px) {
   .guitarraElectrica {
