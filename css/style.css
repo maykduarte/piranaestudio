@@ -489,5 +489,37 @@ form h1 {
         flex-direction: column;
     }
 }*/
+.encabezado h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 50px 20px 50px 20px;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(255, 205, 13) 100%, rgb(0, 212, 255) 100%);
+  border-radius: 20px;
+}
+
+.boxContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid yellow;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 40px 20px 40px 20px;
+}
+.boxContainer .imgBox {
+  margin-right: 20px;
+}
+.boxContainer .textBox h2 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 5px;
+}
+.boxContainer .textBox p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
 
 /*# sourceMappingURL=style.css.map */
